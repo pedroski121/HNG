@@ -19,8 +19,8 @@ res.status(200).json({
   current_day,
   utc_time: utcTime,
   track,
-  github_file_url: "https://github.com/username/repo/blob/main/file_name.ext",
-  github_repo_url: "https://github.com/username/repo",
+  github_file_url: "https://github.com/pedroski121/HNG/blob/main/task_1/index.js",
+  github_repo_url: "https://github.com/pedroski121/HNG",
   status_code: 200
     })
 })
