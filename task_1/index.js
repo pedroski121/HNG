@@ -10,7 +10,8 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 app.get('/api', (req, res)=>{
     const slack_name = req.query.slack_name
     const track = req.query.track
-    const utcTime = new Date(Date.now()).toISOString()
+    const utcTime = new Date(Date.now()).toISOString().slice(0, -5) + 'Z'
+
     const date = new Date()
     const day = date.getDay()
     const current_day = days[day]
